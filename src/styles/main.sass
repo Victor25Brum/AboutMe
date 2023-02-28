@@ -1,0 +1,18 @@
+//eh um CSS mais simples e esse eh o arquivo principal
+
+//comando para importacao sass
+@use 'variables'
+* 
+    padding: 0
+    margin: 0
+    //definindo que a fonte utilizada sera dessa variavel, acessada como objeto
+    font-family: variables.$font-stack
+    //nao passar o tamanho da borda
+    box-sizing: border-box
+
+body 
+    background-color: variables.$body-bg-color
+
+a, svg
+        //transicoes
+        transition: .4s

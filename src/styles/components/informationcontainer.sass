@@ -1,0 +1,54 @@
+@use '../variables'
+@use '../mixins'
+
+#information 
+    @include mixins.center
+    //direcionando os icones para que fiquem em colunas
+    flex-direction: column
+    background-color: variables.$big-color-secondary
+    padding: 1rem
+    margin-bottom: 2rem
+    //alinhando textos a esquerda
+    text-align: left
+    //tamanho em relacao ao container pai
+    width: 80%
+    border-radius: variables.$card-border-radius
+
+    //parte de info-cards
+    .info-card
+        @include mixins.center 
+        justify-content: start
+        gap: 1rem
+        padding-bottom: .8rem
+        margin-bottom: .8rem
+        border-bottom: 1px solid #444
+        width: 100%
+
+    h3
+        color: variables.$text-color-secondary
+        font-size: .8rem
+        //afastando as letras do paragrafo
+        margin-bottom: .5rem
+    
+    p
+        color: variables.$text-color
+        font-weight: bold
+        //tamanho precisou ser alterado pois estava sobrepondo o espaco do icone
+        font-size: 14px
+
+    svg
+        background-color: variables.$big-color
+        padding: .4rem
+        width: 2rem
+        height: 2rem
+        border-radius: variables.$card-border-radius
+
+    //estilizando icones
+    #phone-icon
+        color: #e93b81
+    
+    #email-icon
+        color: #6ab5b9
+
+    #pin-icon
+        color: #c17ceb

@@ -1,0 +1,42 @@
+@use '../variables'
+@use '../mixins'
+
+#sidebar 
+    //cor de fundo
+    background-color: variables.$big-color
+    //proporcao
+    flex: 1 1 0
+    border-radius: variables.$container-border-radius
+    //um ao lado do outro
+    display: flex
+    align-items: center
+    //layout colunar
+    flex-direction: column
+    //texto ao centro
+    text-align: center
+    //imagem saira um pouco do container
+    position: relative
+    //3 de cima embaixo e 0 nas laterais
+    padding: 3rem 0
+
+    img
+        //largura maxima
+        max-width: 70%
+        //chamando variavel de grandes elementos
+        border-radius: variables.$container-border-radius
+        position: absolute
+        //imagem passara um pouco do container
+        top: -3rem
+
+    //titulo da profissao
+    .title 
+        color: variables.$text-color-secondary
+        background-color: variables.$big-color-secondary
+        border-radius: variables.$card-border-radius
+        margin-top: 12rem
+        padding: .8rem 1.2rem
+    
+    //botao de download
+    .btn
+        @include mixins.btn
+        

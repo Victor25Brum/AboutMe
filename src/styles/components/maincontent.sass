@@ -1,0 +1,44 @@
+@use '../variables'
+@use '../mixins'
+
+#main-content 
+    //cor de fundo
+    background-color: variables.$big-color
+    //tera o dobro de tamanho do componente sidebar
+    flex: 2 1 0
+    border-radius: variables.$container-border-radius
+    padding: 3rem
+
+    section
+        //afastando um do outro
+        display: flex
+        //organizando em colunas
+        flex-direction: column
+    
+    h2 
+        color: variables.$text-color
+        font-size: 2.2rem
+        //afastando o titulo do conteudo
+        margin-bottom: 1.3rem
+        @include mixins.center
+        //justificando da esquerda para a direita
+        justify-content: start
+        gap: 1rem
+
+        //pseudoelemento de h2, criando a borda estilizada
+        &:after
+            //chamando o conteudo de gradient-border em mixins
+            @include mixins.gradient-border
+    
+    p
+        color: variables.$text-color-secondary
+        //afastando dos demais elementos
+        margin-bottom: 1rem
+        //aumentando a distancia entre linhas
+        line-height: 1.4rem
+
+    .btn 
+        @include mixins.btn
+        //comeca da esquerda para a direita
+        align-self: start 
+        

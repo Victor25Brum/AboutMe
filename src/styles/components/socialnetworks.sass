@@ -1,0 +1,38 @@
+@use '../variables'
+@use  '../mixins'
+
+#social-networks
+    //chamando as propriedades de center, do arquivo mixins
+    @include mixins.center 
+    //afastando cada um dos itens
+    gap: 1rem
+    //afastando icones
+    margin: 1rem 0
+
+    //estilizando botoes das redes sociais
+    .social-btn
+        padding: .6rem
+        //cor de fundo
+        background-color: variables.$big-color-secondary
+        border-radius: variables.$card-border-radius
+        color: #333
+        font-size: 1.3rem
+        //centralizando o icone do meu container
+        @include mixins.center
+    
+    //estilizando individualmente os icones
+    #linkedin
+        color: #0072b1
+
+    #github
+        color: #111
+    
+    #instagram
+        color: #bc2a8d
+    
+    //fazendo a transicao de cores dos icones (hovers)
+    :hover 
+        background: variables.$gradient
+        //seletor para diferenciar os icones
+        > svg 
+            color: variables.$text-color
