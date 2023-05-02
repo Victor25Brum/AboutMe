@@ -23,10 +23,10 @@ import '../styles/components/technologiescontainer.sass';
 const technologies = [
     { id: "html", name: "HTML5", nivel: "Intermediário", icon: <DiHtml5/> },
     { id: "css", name: "CSS3", nivel: "Intermediário", icon: <DiCss3/> },
-    { id: "js", name: "JavaScript", nivel: "Básico (Aprendendo)", icon: <DiJsBadge/> },
+    { id: "js", name: "JavaScript", nivel: "Básico", icon: <DiJsBadge/> },
     { id: "java", name: "Java", nivel: "Básico", icon: <DiJava/> },
     { id: "mysql", name: "MySQL", nivel: "Avançado", icon: <DiMysql/> },
-    { id: "react", name: "ReactJS", nivel: "Básico (Aprendendo)", icon: <DiReact/> },
+    { id: "react", name: "ReactJS", nivel: "Básico", icon: <DiReact/> },
     { id: "win", name: "Windows", nivel: "Avançado", icon: <DiWindows/> },
     { id: "ps", name: "Photoshop", nivel: "Intermediário", icon: <DiPhotoshop/> },
     { id: "cloud", name: "Cloud", nivel: "Intermediário", icon: <DiOnedrive/> },
