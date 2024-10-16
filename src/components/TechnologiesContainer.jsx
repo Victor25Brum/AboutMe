@@ -32,7 +32,7 @@ const technologies = [
     { id: "cloud", name: "Cloud", nivel: "Intermediário", icon: <DiOnedrive/> },
     { id: "migra", name: "Migração", nivel: "Intermediário", icon: <DiDatabase/> },
     { id: "groovy", name: "Groovy", nivel: "Intermediário", icon: <DiGroovy/> },
-    { id: "json", name: "JSON", nivel: "Básico", icon: <DiGitPullRequest/> },
+    { id: "json", name: "JSON", nivel: "Intermediário", icon: <DiGitPullRequest/> },
 ];
 
 const TechnologiesContainer = () => {
